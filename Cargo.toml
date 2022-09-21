@@ -1,0 +1,13 @@
+[package]
+name = "db_api"
+version = "0.1.0"
+authors = ["vinoca <vinoca@vinoca.org>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.48"
+async-std = { version = "1.10.0", features = [ "attributes" ] }
+heck = "0.3.3"
+serde = { version = "1.0.130", features = [ "derive" ] }
+serde_yaml = "0.8.23"
+sqlx = { version = "0.5.9", features = [ "runtime-async-std-native-tls", "mysql", "chrono", "json" ] }
